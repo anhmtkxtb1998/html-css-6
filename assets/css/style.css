@@ -504,7 +504,115 @@ a {
   font-weight: 500;
   line-height: 1.71;
 }
-
+/* Process */
+.process {
+  margin-top: 79px;
+}
+.process__title {
+  position: relative;
+  margin-top: 36px;
+  padding-left: 53px;
+  color: #152427;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+.process__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background: #152427;
+  top: 9px;
+  left: 0;
+}
+.process__heading {
+  margin-top: 20px;
+  color: #152427;
+  width: 471px;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.23; /* 123.81% */
+}
+.process-list {
+  margin-top: 81px;
+  position: relative;
+}
+.process-item__image {
+  display: block;
+  width: 450px;
+  height: 444px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  right: 92px;
+  top: -266px;
+}
+.process-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 54px 20px;
+  border-radius: 33px;
+  /* background: #e2eddf; */
+}
+.process-item__order {
+  color: #143c3c;
+  font-size: 72px;
+  font-weight: 600;
+}
+.process-item__heading-block {
+  width: 34%;
+  margin-left: 64px;
+}
+.process-item__heading {
+  padding: 15px 0;
+  color: #152427;
+  font-size: 22px;
+  font-weight: 600;
+}
+.process-item__heading-learn {
+  display: none;
+  margin-top: 22px;
+  color: #575d5e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.process-item__desc {
+  display: block;
+  width: 50%;
+  color: #7d8188;
+  font-family: var(--font-2th);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.55;
+}
+.process-item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1131px;
+  height: 3px;
+  background: linear-gradient(
+    180deg,
+    #83a17d 4.17%,
+    rgba(131, 161, 125, 0) 36.46%
+  );
+  left: 0;
+  bottom: 0;
+}
+.process-item:hover {
+  background: #e2eddf;
+}
+.process-item:hover .process-item__heading-learn {
+  display: block;
+}
+.process-item:hover::after {
+  background: #fff;
+}
 /* Keyframe */
 @keyframes loading {
   0% {
